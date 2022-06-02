@@ -1,5 +1,6 @@
 package com.ds.words
 
+import android.content.Intent
 import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
@@ -47,6 +48,11 @@ class LetterAdapter :
     override fun onBindViewHolder(holder: LetterViewHolder, position: Int) {
         val item = list.get(position)
         holder.button.text = item.toString()
+        holder.button.setOnClickListener{
+            val context = holder.view.context
+            val intent  = Intent(context, DetailActivity::class.java)
+            intent.putExtra("letter", holder.button.text.toString())
+        }
     }
 
     // Setup custom accessibility delegate to set the text read with
