@@ -1,3 +1,7 @@
-<resources>
-    <string name="app_name">Words</string>
-</resources>
+ <resources>
+        <string name="app_name">Words</string>
+        <string name="detail_prefix">Palavras que começam com</string>
+        <string name="action_switch_layout">Mudar Layout</string>
+        <string name="look_up_word">Pesquisar uma palavra no browser</string>
+        <string name="look_up_words">Mostrar palavras armazenadas</string>
+    </resources>
